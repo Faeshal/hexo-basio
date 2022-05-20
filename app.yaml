@@ -1,9 +1,13 @@
 runtime: nodejs16
 
 handlers:
-  - url: /
-    static_files: public/index.html
-    upload: public/index.html
+  - url: /info
+    static_dir: public/info
+
+  - url: /(.*\.(json|ico|js))$
+    static_files: public/\1
+    upload: public/.*\.(json|ico|js)$
 
   - url: /.*
-    script: auto
+    static_files: public/index.html
+    upload: public/index.html
