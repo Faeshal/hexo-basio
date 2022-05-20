@@ -13,7 +13,8 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://digitalent-dicoding2022.et.r.appspot.com
+url: https://digitalent-dicoding2022.et.r.appspot.com/
+root: /
 permalink: posts/:title-:hash/
 permalink_defaults:
 pretty_urls:
