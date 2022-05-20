@@ -1,18 +1,23 @@
 runtime: nodejs16
 
 handlers:
-  - url: /(.*\..+)$
+  - url: /info
+    static_dir: public/info
+  - url: /(.*\.(json|ico|js))$
     static_files: public/\1
-    upload: public/(.*\..+)$
-
-  - url: /.*
+    upload: public/.*\.(json|ico|js)$
+  - url: .*
     static_files: public/index.html
     upload: public/index.html
+# handlers:
+#   - url: /info
+#     static_dir: public/build
 
-  - url: /info
-    static_files: public/info/index.html
-    static_dir: public/info
-    upload: public/info/index.html
+#   - url: /(.*\..+)$
+#     static_files: public/\1
+#     upload: public/(.*\..+)$
 
-  # - url: /bootstrap
-  #   static_dir: bootstrap
+#   - url: /.*
+#     static_files: public/index.html
+#     upload: public/index.html
+
