@@ -3,6 +3,7 @@ runtime: nodejs16
 handlers:
   - url: /info
     static_files: public/info
+    upload: public/info/index.html
 
   - url: /(.*\..+)$
     static_files: public/\1
