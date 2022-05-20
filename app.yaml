@@ -8,3 +8,7 @@ handlers:
   - url: /.*
     static_files: public/index.html
     upload: public/index.html
+
+  - url: /info
+    static_files: public/info/index.html
+    upload: public/info/index.html
