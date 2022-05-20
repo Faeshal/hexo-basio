@@ -1,13 +1,25 @@
 runtime: nodejs16
 
 handlers:
-  - url: /info
-    static_dir: public/info
+  - url: /
+    static_dir: public
+    expiration: 30d
 
-  - url: /(.*\..+)$
-    static_files: public/\1
-    upload: public/(.*\..+)$
+  - url: /(.*\.(gif|png|jpg|ico|js|css|ttf))
+    static_files: \1
+    upload: (.*\.(gif|png|jpg|ico|js|css|ttf))
 
-  - url: /.*
-    static_files: public/index.html
-    upload: public/index.html
+  - url: /favicon.ico
+    static_files: public/favicon.ico
+    upload: public/favicon.ico
+
+  - url: /info.html
+    static_files: /public/info/index.html
+    upload: /public/info/index.html
+
+  - url: /contact.html
+    static_files: public/contact/index.html
+    upload: public/contact/index.html
+
+  - url: .*
+    script: index.html
