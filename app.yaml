@@ -11,4 +11,8 @@ handlers:
 
   - url: /info
     static_files: public/info/index.html
+    static_dir: public/info
     upload: public/info/index.html
+
+  # - url: /bootstrap
+  #   static_dir: bootstrap
