@@ -3,7 +3,7 @@ navname: Home
 
 # navigatior items
 nav:
-  Submission Info: /archives
+  Submission Info: /info
 
 # favicon
 favicon: /favicon.ico
