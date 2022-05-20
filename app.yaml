@@ -1,12 +1,10 @@
 runtime: nodejs16
 
 handlers:
-  ## static content routing
-  - url: /
-    static_files: public/index.html
-    upload: public/*
+  - url: /(.*\..+)$
+    static_files: public/\1
+    upload: public/(.*\..+)$
 
-  # hugo generates pages in directories so check for index.html first
-  - url: /(.*)/
-    static_files: public/\1/index.html
-    upload: public/*
+  - url: /.*
+    static_files: public/index.html
+    upload: public/index.html
