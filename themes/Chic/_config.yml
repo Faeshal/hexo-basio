@@ -4,6 +4,7 @@ navname: Home
 # navigatior items
 nav:
   Submission Info: /info
+  contact: /contact
 
 # favicon
 favicon: /favicon.ico
