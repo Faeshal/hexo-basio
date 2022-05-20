@@ -1,79 +1,9 @@
 runtime: nodejs16
 
 handlers:
-  - url: /(.*\.css)
-    mime_type: text/css
+  - url: /(.*\..+)$
     static_files: public/\1
-    upload: public/(.*\.css)
-
-  - url: /(.*\.ico)
-    mime_type: image/x-icon
-    static_files: public/\1
-    upload: public/(.*\.ico)
-
-  - url: /(.*\.js)
-    mime_type: text/javascript
-    static_files: public/\1
-    upload: public/(.*\.js)
-
-  - url: /(.*\.otf)
-    mime_type: font/opentype
-    static_files: public/\1
-    upload: public/(.*\.otf)
-
-  - url: /(.*\.(svg|svgz))
-    mime_type: images/svg+xml
-    static_files: static/\1
-    upload: static/(.*\.(svg|svgz))
-
-  - url: /(.*\.swf)
-    mime_type: application/x-shockwave-flash
-    static_files: static/\1
-    upload: static/(.*\.swf)
-
-  - url: /(.*\.ttf)
-    mime_type: font/truetype
-    static_files: static/\1
-    upload: static/(.*\.ttf)
-
-  - url: /(.*\.txt)
-    mime_type: text/plain
-    static_files: static/\1
-    upload: static/(.*\.txt)
-
-  - url: /(.*\.unity3d)
-    mime_type: application/vnd.unity
-    static_files: static/\1
-    upload: static/(.*\.unity3d)
-
-  - url: /(.*\.webm)
-    mime_type: video/webm
-    static_files: static/\1
-    upload: static/(.*\.webm)
-
-  - url: /(.*\.webp)
-    mime_type: image/webp
-    static_files: static/\1
-    upload: static/(.*\.webp)
-
-  - url: /(.*\.woff)
-    mime_type: application/x-font-woff
-    static_files: static/\1
-    upload: static/(.*\.woff)
-
-  # image files
-  - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
-    static_files: public/\1
-    upload: public/(.*\.(bmp|gif|ico|jpeg|jpg|png))
-
-  # index files
-  - url: /(.+)/
-    static_files: public/\1/index.html
-    upload: public/(.+)/index.html
-
-  - url: /(.+)
-    static_files: public/\1/index.html
-    upload: public/(.+)/index.html
+    upload: public/(.*\..+)$
 
   # site root
   - url: /
@@ -83,10 +13,6 @@ handlers:
   - url: /info
     static_files: public/info/index.html
     upload: public/info/index.html
-
-  - url: /contact
-    static_files: public/contact
-    upload: public/contact
 
   - url: .*
     script: index.html
