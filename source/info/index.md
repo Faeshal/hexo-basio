@@ -5,12 +5,12 @@ date: 2022-05-20 20:19:05
 
 ## Deployment Info
 
-This simple profile page is use for the first Dicoding submission Dicoding in the google cloud engineer path. This page follows Dicoding suggestion, which is :
+This simple profile page is use for the first Dicoding submission in the Google Cloud Engineer program. This page follows Dicoding suggestion, which is :
 
 - Deploy on top of the Google App Engine (GAE) ✅
 - Use Google Cloud Storage (GCS) as image/asset storage service ✅
 
-## Screenshoot
+## Screenshot
 
 The following is a screenshot of the Google App Engine & Google Cloud Storage details taken from the GCP console:
 

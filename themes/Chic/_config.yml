@@ -3,7 +3,7 @@ navname: Home
 
 # navigatior items
 nav:
-  Submission Info: /info
+  Info: /info
 
 # favicon
 favicon: /favicon.ico
@@ -12,11 +12,11 @@ favicon: /favicon.ico
 nickname: Faeshal
 
 ### this variable is MarkDown form.
-description: Hi Faeshal here, 24/yo a Backend Engineer at Deeeplabs Pte Ltd, Singapore 🇸🇬. Most of the time working using Node.JS, Golang & the ecosystem. Interested in cloud native technology & currently learning Google Cloud Platform at Dicoding, Indonesia 🇮🇩
+description: Hi Faeshal here, 24/yo, Backend Engineer at Deeeplabs Pte Ltd, Singapore 🇸🇬. Most of the time working with Node.JS, Golang & the ecosystem. Interested in cloud native technology & currently learning Google Cloud Platform at Dicoding, Indonesia 🇮🇩
 avatar: https://storage.googleapis.com/personal_ember/images/profile_compress.jpg
 
 # main menu navigation
-## links key words should not be changed.
+## links key words should not be changed
 ## Complete url after key words.
 ## Unused key can be commented out.
 links:
